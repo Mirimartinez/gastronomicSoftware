@@ -1,3 +1,13 @@
+body {
+    margin: 0%;
+    font-family: sans-serif;
+}
+
+header {
+    width: 100%;
+    background: ;
+}
+
 ul {
 	list-style-type:none;
 	margin:0;
@@ -14,7 +24,8 @@ li {
 
 /* Estilos para los link */
 li a {
-	display:block;
+	display: block;
+    padding: 15px, 20px;
 	min-width:140px;
 	height: 50px;
 	text-align: center;
@@ -28,7 +39,8 @@ li a {
 
 /* estados hover de los link */
 li:hover a {
-	background: #9fa7a4;
+	cursor: pointer;
+    background: #9fa7a4;
 }
 
 /* estilos del dropdown */
@@ -73,7 +85,7 @@ ul li a:hover + .hidden, .hidden:hover {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-decoration: none;
 	color: #fff;
-	background: #19c589;
+	background: #2f3036;
 	text-align: center;
 	padding: 10px 0;
 	display: none;
@@ -97,19 +109,16 @@ input[type=checkbox]:checked ~ #menu{
 @media screen and (max-width : 760px){
 	/*Hace que el dropdown links aparescan en linea */
 	ul {
-		position: static;
-		display: none;
+		position: absolute;
+		display: block;
 	}
 	/*Crea espacio vertical */
 	li {
 		margin-bottom: 1px;
 	}
-	/* crea todo el menu links  ancho full */
+	/* crea todo el menu links al 60% */
 	ul li, li a {
-		width: 100%;
+		width: 60%;
 	}
-	/*Display '.muestra-menu' link*/
-	.show-menu {
-		display:block;
-	}
+	
 }

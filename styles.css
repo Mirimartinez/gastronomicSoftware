@@ -15,7 +15,7 @@ ul {
 	position: absolute;
 }
 
-/*Crea la listahorizontal con espacio*/
+/*Crea la lista horizontal con espacio*/
 li {
 	display:inline-block;
 	float: left;
@@ -107,7 +107,7 @@ input[type=checkbox]:checked ~ #menu{
 /* estilos responsive */
 
 @media screen and (max-width : 760px){
-	/*Hace que el dropdown links aparescan en linea */
+	/*Hace que el dropdown links aparezcan en linea */
 	ul {
 		position: absolute;
 		display: block;
@@ -122,3 +122,91 @@ input[type=checkbox]:checked ~ #menu{
 	}
 	
 }
+/*
+.mesa {
+	width:25vh;
+	max-width:100px;
+	height:25vh;
+	max-height:100px;
+	position:relative;
+	background:red;
+	justify-content: space-around;
+  }*/
+  /* Círculos de colores numerados */
+  h1 {
+	flex-direction: row;
+  }
+
+span.red {
+	background: red;
+	border-radius: 0.8em;
+	color: #ffffff;
+	display: inline-block;
+	font-weight: bold;
+	line-height: 1.6em;
+	margin-right: 15px;
+	text-align: center;
+	width: 1.6em; 
+	box-shadow: 5px 5px 5px 0px rgba(50, 50, 50, 0.5);
+
+  }
+  
+  div.grey {
+	background: #cccccc;
+	border-radius: 0.8em;
+	color: #fff;
+	display: inline-block;
+	font-weight: bold;
+	line-height: 1.6em;
+	margin-right: 15px;
+	text-align: center;
+	width: 1.6em; 
+	box-shadow: 5px 5px 5px 0px rgba(50, 50, 50, 0.5);
+	flex-direction: row;
+  }
+  
+  span.green {
+	background: #5EA226;
+	border-radius: 0.8em;
+	color: #ffffff;
+	display: inline-block;
+	font-weight: bold;
+	line-height: 1.6em;
+	margin-right: 15px;
+	text-align: center;
+	width: 1.6em; 
+	box-shadow: 5px 5px 5px 0px rgba(50, 50, 50, 0.5);
+  }
+  
+  span.blue {
+	background: #5178D0;
+	border-radius: 0.8em;
+	color: #ffffff;
+	display: inline-block;
+	font-weight: bold;
+	line-height: 1.6em;
+	margin-right: 15px;
+	text-align: center;
+	width: 1.6em; 
+	box-shadow: 5px 5px 5px 0px rgba(50, 50, 50, 0.5);
+  }
+  
+  span.pink {
+	background: #EF0BD8;
+	border-radius: 0.8em;
+	color: #ffffff;
+	display: inline-block;
+	font-weight: bold;
+	line-height: 1.6em;
+	margin-right: 15px;
+	text-align: center;
+	width: 1.6em; 
+	box-shadow: 5px 5px 5px 0px rgba(50, 50, 50, 0.5);
+	
+
+  }
+  
+  
+  
+  
+  

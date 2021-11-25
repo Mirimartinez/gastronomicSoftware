@@ -1,6 +1,9 @@
+/* Archivo INDEX.html */
+
 body {
     margin: 0%;
     font-family: sans-serif;
+	border-style: ridge;
 }
 
 header {
@@ -34,7 +37,7 @@ li a {
 	color: #fff;
 	background: #2f3036;
 	text-decoration: none;
-  transition:all 0.5s ease;
+    transition:all 0.5s ease;
 }
 
 /* estados hover de los link */
@@ -122,91 +125,152 @@ input[type=checkbox]:checked ~ #menu{
 	}
 	
 }
-/*
-.mesa {
+
+  /* MAPA DE MESAS */
+	
+	body {
+		font-family: 'Lora', serif;		
+	}
+
+	h2 {
+		font-weight: bold;
+		margin-top: 15px;
+	}
+  .container {
+
+	width: 90%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-content: center;
+	padding-left: 10%;
+
+  }
+
+ .mapaMesas {
+	text-align: center;
+  }
+ 
+  h1 {
+	width: 20%;
+  }
+/* MESAS CIRCULARES */
+span {
+	background: rgba(97, 231, 35, 0.726);
+	border-radius: 100%;
+	color: #ffffff;
+	display: block;
+	font-weight: bold;
+	line-height: 2.2em;
+	margin-right: 15px;
+	margin-bottom: 30px;
+	text-align: center;
+	width: 2.3em;
+	height: 2.3em; 
+	box-shadow: 5px 5px 5px 0px rgba(50, 50, 50, 0.5);
+	flex-direction: row;
+  }
+/* MESAS RECTANGULARES */
+  div .square {
 	width:25vh;
 	max-width:100px;
-	height:25vh;
 	max-height:100px;
-	position:relative;
-	background:red;
+	width: 5em;
+	height: 2em; 
+	color: #ffffff;
+	display: block;
+	background: rgba(97, 231, 35, 0.726);
+	text-align: center;
+	font-weight: bold;
+	line-height: 2em;
+	margin-bottom: 30px;
+	box-shadow: 5px 5px 5px 0px rgba(50, 50, 50, 0.5);
+}
+  img {
+	max-width:100px;
+	max-height:100px;
+	background-color: transparent;
+	padding-top: 15%;
+  }
+
+  div .number {
+	font-weight: bold;
+	line-height: 2.5em;
+	text-align: center;
+	position: absolute;  
+	z-index: 4;
+	background: rgba(81, 247, 4, 0.726);
+	border-radius: 100%;
+	color: red;
+	display: grid;
+	grid-column: 1/5;
+	grid-row: 1;
+	width: 2.3em;
+	height: 2.3em; 
+	box-shadow: 5px 5px 5px 0px rgba(50, 50, 50, 0.5);
+	flex-direction: row;
+
+}
+
+/*  
+div .bigsquare {
+
+	width: 15em;
+	height: 2em; 
+	color: #ffffff;
+	display: flex;
 	justify-content: space-around;
-  }*/
-  /* Círculos de colores numerados */
-  h1 {
-	flex-direction: row;
-  }
+	background:rgb(103, 218, 10);
+	text-align: center;
+	line-height: 2em;
 
-span.red {
-	background: red;
-	border-radius: 0.8em;
-	color: #ffffff;
-	display: inline-block;
-	font-weight: bold;
-	line-height: 1.6em;
-	margin-right: 15px;
-	text-align: center;
-	width: 1.6em; 
-	box-shadow: 5px 5px 5px 0px rgba(50, 50, 50, 0.5);
+}*/
+  
+  /* MESA - COMANDA */
+/* Acá tenemos que cargar dos rectangulos, uno para las comandas, el otro será para 
+los botones
+de las categorías  */
 
-  }
-  
-  div.grey {
-	background: #cccccc;
-	border-radius: 0.8em;
-	color: #fff;
-	display: inline-block;
-	font-weight: bold;
-	line-height: 1.6em;
-	margin-right: 15px;
-	text-align: center;
-	width: 1.6em; 
-	box-shadow: 5px 5px 5px 0px rgba(50, 50, 50, 0.5);
-	flex-direction: row;
-  }
-  
-  span.green {
-	background: #5EA226;
-	border-radius: 0.8em;
-	color: #ffffff;
-	display: inline-block;
-	font-weight: bold;
-	line-height: 1.6em;
-	margin-right: 15px;
-	text-align: center;
-	width: 1.6em; 
-	box-shadow: 5px 5px 5px 0px rgba(50, 50, 50, 0.5);
-  }
-  
-  span.blue {
-	background: #5178D0;
-	border-radius: 0.8em;
-	color: #ffffff;
-	display: inline-block;
-	font-weight: bold;
-	line-height: 1.6em;
-	margin-right: 15px;
-	text-align: center;
-	width: 1.6em; 
-	box-shadow: 5px 5px 5px 0px rgba(50, 50, 50, 0.5);
-  }
-  
-  span.pink {
-	background: #EF0BD8;
-	border-radius: 0.8em;
-	color: #ffffff;
-	display: inline-block;
-	font-weight: bold;
-	line-height: 1.6em;
-	margin-right: 15px;
-	text-align: center;
-	width: 1.6em; 
-	box-shadow: 5px 5px 5px 0px rgba(50, 50, 50, 0.5);
+body {
+	font-family: 'Lora', serif;	
 	
+	}
 
+	.rectangulos {
+		display: grid;
+		grid-auto-columns: 1fr;
+	}
+
+	.cargar {
+	border-style: solid;
+	border-width: thin;
+	}
+
+  .pedido {
+	border-style: solid;
+	border-width: thin;
   }
-  
-  
-  
-  
-  
+
+  li {
+	  
+	list-style-type: circle;
+  }
+
+  .CerrarMesa {
+	  box-shadow: 3px 3px 0px 0px rgba(106, 163, 137, 0.692);
+	  border-radius: 10%;
+	  cursor: pointer;
+	  border: 1px solid rgb(121, 186, 156);
+	  font-weight: 100;
+	  font-size: 20px;
+	  color:rgb(61, 116, 91);	  
+}
+
+.CerrarMesa:hover {
+	background-color: rgba(106, 163, 137, 0.692);
+}
+
+.CerrarMesa:active {
+top:1px;
+}
+/*  */
